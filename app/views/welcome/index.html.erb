@@ -1,0 +1,52 @@
+
+<style type="text/css">
+.site {
+  position: absolute;
+  z-index: 4;
+  background-image: url(/images/site-1.png);
+}
+
+.background {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  left: 0px;
+  width: 1280px;
+  height: 50px;
+  background-color: #cde3f9;
+}
+
+.background-arrows {
+  position: absolute;
+  z-index: 3;
+  top: 15px;
+  left: 0px;
+  width: 1280px;
+  height: 52px;
+  background: url(/images/background-1.png);
+}
+
+.gradient {
+  position: absolute;
+  z-index: 2;
+  background-image: url(/images/gradient-1.png);
+  top: 17px;
+  left: -800px;
+  width: 500px;
+  height: 52px;
+}
+</style>
+<div class="site">
+</div>
+<div class="background">
+</div>
+<div class="gradient">
+</div>
+<div class="background-arrows">
+</div>
+<script type="text/javascript">
+(function() {
+  $set_and_move = function(){$('.gradient').css('left', '-800px'); $('.gradient').animate({left: "+=2080"}, {easing: 'linear', duration: 3000, complete: $set_and_move});}
+  $set_and_move.call();
+}).call();
+</script>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MadeYourSiteBetterDawg</title>
+  <%= stylesheet_link_tag :all, 'global' %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<div class="body">
+  <%= yield %>
+</div>
+
+</body>
+</html>
